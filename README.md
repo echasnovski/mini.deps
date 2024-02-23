@@ -77,11 +77,11 @@ require('mini.deps').setup({ path = { package = path_package } })
 
 To install from standalone repository, replace any occurrence of 'mini.nvim' in the code snippet to 'mini.deps'.
 
-NOTE: 'mini.nvim' is installed in 'pack/deps/start' and not 'pack/deps/opt' to always be included in 'mini.deps' session. If you want to make it "opt" plugin (as any other installed plugin), use 'pack/deps/opt' but add `MiniDeps.add('mini.nvim')` call after 'mini.deps' is set up.
+**NOTE**: 'mini.nvim' is installed in 'pack/deps/start' and not 'pack/deps/opt' to always be included in 'mini.deps' session. If you want to make it "opt" plugin (as any other installed plugin), use 'pack/deps/opt' but add `MiniDeps.add('mini.nvim')` call after 'mini.deps' is set up.
 
 ## Overview
 
-See and use [example 'init.lua' file](../scripts/init-deps-example.lua) as a quick demo of how 'mini.deps' can be used:
+See and use [example 'init.lua' file](scripts/init-deps-example.lua) as a quick demo of how 'mini.deps' can be used:
 - Copy its contents into a '~/.config/nvim-deps/init.lua' file (on UNIX systems).
 - Run `NVIM_APPNAME=nvim-deps nvim -- ~/.config/nvim-deps/init.lua` (requires Neovim>=0.9 which might display tree-sitter issues on first start; prefer Neovim>=0.10). This will run Neovim with that 'init.lua' as the only config **while completely not affecting your current config**.
 
